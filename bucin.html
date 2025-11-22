@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucin Page</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffe6f2;
+            text-align: center;
+            padding: 40px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #ff4da6;
+        }
+        p {
+            font-size: 18px;
+        }
+        .form-box {
+            margin-top: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        textarea {
+            width: 90%;
+            height: 120px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            resize: none;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    .love-btn {
+            background: linear-gradient(45deg, #ff4da6, #ff8acb);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.4s ease;
+            box-shadow: 0 0 15px rgba(255, 77, 166, 0.6);
+        }
+        .love-btn:hover {
+            background: linear-gradient(45deg, #ff8acb, #ff4da6);
+            box-shadow: 0 0 25px rgba(255, 77, 166, 1);
+            transform: scale(1.05);
+        }
+
+
+    </style>
+    <style>
+    .typing-text {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 0 10px #ff4da6;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid white;
+        margin-bottom: 20px;
+
+        animation: typing 4s steps(40) forwards,
+                   blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    @keyframes blink {
+        50% { border-color: transparent; }
+    }
+</style>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('aa3.png') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+        padding: 40px;
+    }
+</style>
+    <script>
+        function kirimWA() {
+            let pesan = document.getElementById("pesan").value;
+            let nomor = "6280000000000"; // ganti dengan nomor tujuan
+
+            if(pesan.trim() === ""){
+                alert("Isi dulu pesannya yaa!");
+                return;
+            }
+
+            let url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
+            window.open(url, "_blank");
+        }
+    </script>
+<audio autoplay loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <style>
+        .love {
+            position: fixed;
+            top: -10px;
+            font-size: 24px;
+            animation: fall 4s linear infinite;
+            color: #ff4da6;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+
+    <script>
+        function createLove() {
+            const love = document.createElement('div');
+            love.classList.add('love');
+            love.innerHTML = '❤';
+            love.style.left = Math.random() * 100 + 'vw';
+            love.style.animationDuration = 2 + Math.random() * 3 + 's';
+            document.body.appendChild(love);
+            setTimeout(() => love.remove(), 4000);
+        }
+        setInterval(createLove, 500);
+    </script>
+
+</head>
+<body>
+    <div class="typing-text">
+    Hai sayang, semoga harimu indah ya 💖
+</div>
+
+    <div class="card">
+        <img src="yaya3.png" alt="Foto Bucin" />
+        <h2>Untuk Kamu ❤️</h2>
+        <p>"Aku nggak butuh kopi buat melek... soalnya setiap mikirin kamu, hati aku udah nggak bisa tidur."</p>
+    </div>
+
+    <div class="card">
+        <img src="Capture1.png" alt="Foto Bucin" />
+        <h2>Buat Kamu Lagi ❤️</h2>
+        <p>"Kamu Jahat Udah Buat aku Gila Sampe Ga Bisa Lupain Kamu."</p>
+    </div>
+
+    <div class="card">
+        <h2>Nggak Cukup Satu ❤️</h2>
+        <div style="display:flex; gap:10px; justify-content:center;">
+            <img src="ya8.png" alt="Foto 1" style="width:30%; border-radius:10px;">
+            <img src="ya8.png" alt="Foto 2" style="width:30%; border-radius:10px;">
+            <img src="ya8.png" alt="Foto 3" style="width:30%; border-radius:10px;">
+        </div>
+        <p>"Kalau ada yang nanya kebahagiaanku di mana... bakal aku tunjuk kamu."</p>
+        <p>: ↓</p>
+    </div>
+
+    <div class="card">
+        <h2>INI DIA KEBAHAGIANKU ❤️</h2>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+            <img src="Capture59.png" alt="Foto 1" style="width:30%; border-radius:10px;">
+            <img src="yaya3.png" alt="Foto 2" style="width:30%; border-radius:10px;">
+            <img src="Capture56.png" alt="Foto 3" style="width:30%; border-radius:10px;">
+            <img src="Capture57.png" alt="Foto 4" style="width:30%; border-radius:10px;">
+            <img src="Capture58.png" alt="Foto 5" style="width:30%; border-radius:10px;">
+        </div>
+    </div>
+
+
+
+    <div class="form-box">
+        <h2>KAMU SAYANG AKU NGGA 😘</h2>
+        <h2>Kirim Balasan Kamu 😘</h2>
+        <textarea id="pesan" placeholder="Tulis pesan bucin kamu di sini..."></textarea>
+        <br>
+        <a class="btn" onclick="kirimWA()">Kirim ke WhatsApp</a>
+    </div>
+
+<div style="height: 20px;"></div>
+</body>
+</html>

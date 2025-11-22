@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucin Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffe6f2;
+            text-align: center;
+            padding: 40px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #ff4da6;
+        }
+        p {
+            font-size: 18px;
+        }
+        .form-box {
+            margin-top: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        textarea {
+            width: 90%;
+            height: 120px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            resize: none;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    .love-btn {
+            background: linear-gradient(45deg, #ff4da6, #ff8acb);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.4s ease;
+            box-shadow: 0 0 15px rgba(255, 77, 166, 0.6);
+        }
+        .love-btn:hover {
+            background: linear-gradient(45deg, #ff8acb, #ff4da6);
+            box-shadow: 0 0 25px rgba(255, 77, 166, 1);
+            transform: scale(1.05);
+        }
+
+    </style>
+    <script>
+        function kirimWA() {
+            let pesan = document.getElementById("pesan").value;
+            let nomor = "6280000000000"; // ganti dengan nomor tujuan
+
+            if(pesan.trim() === ""){
+                alert("Isi dulu pesannya yaa!");
+                return;
+            }
+
+            let url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
+            window.open(url, "_blank");
+        }
+    </script>
+<audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('aa3.png') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+        padding: 40px;
+    }
+</style>
+</style>
+
+
+    <script>
+        function createLove() {
+            const love = document.createElement('div');
+            love.classList.add('love');
+            love.innerHTML = '❤';
+            love.style.left = Math.random() * 100 + 'vw';
+            love.style.animationDuration = 2 + Math.random() * 3 + 's';
+            document.body.appendChild(love);
+            setTimeout(() => love.remove(), 4000);
+        }
+        setInterval(createLove, 500);
+    </script>
+
+</head>
+<body>
+    
+    <div class="form-box" style="border:2px solid #ff4da6; background:#fff0f7;">
+    <h2>Love Button 💖</h2>
+    <form>
+        <button 
+            type="button" 
+            onclick="window.location.href='bucin.html'" 
+            class="love-btn" 
+            style="padding:12px 25px; border:none; border-radius:15px; font-size:18px; cursor:pointer;">
+            Klik Cinta 💞
+        </button>
+    </form>
+</div>
